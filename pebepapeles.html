@@ -24,14 +24,33 @@
         }
 
         #mensaje h1 {
-            color: #333;
+            color: #e44d26;
             margin-bottom: 10px;
         }
 
-        #mensaje .resaltado {
-            font-size: 24px;
-            color: #e44d26;
+        #mensaje .resaltado-pebe-disenos {
+            font-size: 20px;
+            color: #79c95a; /* Color verde claro */
             font-weight: bold;
+        }
+
+        #mensaje .logo {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            animation: zoomLogo 1s alternate infinite;
+        }
+
+        @keyframes zoomLogo {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
 
         #mensaje .espera {
@@ -41,7 +60,7 @@
     </style>
     <script>
         window.onload = function() {
-            document.getElementById('mensaje').innerHTML = '<h1>Nos mudamos!</h1><p>Pebe Diseños ahora es <span class="resaltado">Pebe Papeles</span>.</p><p class="espera">Espera unos segundos mientras cargamos la nueva página...</p>';
+            document.getElementById('mensaje').innerHTML = '<h1>Nos mudamos!</h1><p><span class="resaltado-pebe-disenos">Pebe Diseños</span></p><p>Ahora es:</p><img src="https://d22fxaf9t8d39k.cloudfront.net/e570fa973eaa390e02f9f8c6c8e9784c87da6cd62d5f45c57f755538e392c2f390371.png" alt="Logo Pebe Papeles" class="logo"><p class="espera">Espera unos segundos mientras cargamos la nueva página...</p>';
         };
     </script>
 </head>
